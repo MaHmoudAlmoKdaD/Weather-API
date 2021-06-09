@@ -1,0 +1,184 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.app {
+  height: 100vh;
+  width: 100%;
+  background-color: #9CCEF4;
+  font-family: "Raleway", sans-serif;
+  
+}
+.centering{
+  text-align: center;
+}
+
+.wrapper {
+  background-color: #759EDA;
+  height: 100px;
+}
+.inputs-fileds{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
+}
+.inputs-fileds input{
+  margin-left: 15px;
+  outline: none;
+  background-color: #759EDA;
+  border: 1px #5879C7 solid;
+  color: #BAD0DA;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  padding: 10px;
+  font-size: large;
+  font-family: "Raleways", sans-serif;
+}
+.inputs-fileds input::placeholder {
+  color: #BAD0DA;
+  font-family: "Ralewsay", sans-serif;
+}
+.inputs-fileds input:focus {
+  border-bottom-style: groove;
+}
+.inputs-fileds button{
+  border: none;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: large;
+  background-color: #5879C7;
+  font-family: "Raleway", sans-serif;
+}
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 130px;
+  }
+  .inputs-fileds{
+      display: block;
+  }
+  .inputs-fileds input{
+    margin-top: 10px;
+  }
+  .inputs-fileds button{
+      margin-top: 10px;
+  }
+  
+}
+
+/* current weather component  */
+
+.current-weather{
+  display: flex;
+  justify-content: center;
+}
+.wrapper-current-weather{
+  width: 230px;
+  text-align: center;
+}
+.image{
+  width: 15rem;
+  height: 15rem;
+}
+.weather{
+  color: #fff;
+  font-weight: 600;
+}
+.info-current-weather{
+ display: grid;
+ grid-template-columns: 300px  ;
+ grid-template-rows: 1fr 1fr;
+}
+
+.info-current-weather .temperature{
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+
+}
+.mt-2{
+  margin-top: 25px; 
+}
+.mt-4{
+  margin-top: 40px; 
+  margin-bottom: 40px;
+}
+.bold{
+  font-weight: bold;
+}
+.s_50px{
+  font-size: 20px;
+}
+
+/* weather item  */
+.weather-coming-hours{
+  background-color: #9CCEF4;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+.weather-item{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-item{
+  width: 6rem;
+  height: 6rem;
+}
+.item{
+  text-align: center;
+}
+.error{
+  color: #f00;
+  text-align: center;
+  margin-top: 20%; 
+  font-size: xx-large; 
+}
+.loading-image{
+  width: 100%;
+  height: 100%;
+}
+.loading-image img{
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 750px) {
+  .info-current-weather{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    grid-template-rows: 1fr 1fr;
+   }
+  .weather-coming-hours{
+    background-color: #9CCEF4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    
+  }
+  .item{
+    border-bottom: 1px #5879C7 solid;
+    margin-right: 5px;
+    padding: 10px;
+  }
+  
+}
+
+
+@media screen and (max-width: 1000px) {
+  .error{
+    font-size: x-large; 
+  }
+}
+@media screen and (max-width: 700px) {
+  .error{
+    font-size: large; 
+  }
+}
+@media screen and (max-width: 600px) {
+  .error{
+    font-size: small; 
+  }
+}
